@@ -1,0 +1,9 @@
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.csproj.AssemblyReference.cache
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.GeneratedMSBuildEditorConfig.editorconfig
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.AssemblyInfoInputs.cache
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.AssemblyInfo.cs
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.csproj.CoreCompileInputs.cache
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.MvcApplicationPartsAssemblyInfo.cache
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.MvcApplicationPartsAssemblyInfo.cs
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.RazorAssemblyInfo.cache
+/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/obj/Debug/net6.0/KraftHeinz.RazorAssemblyInfo.cs
