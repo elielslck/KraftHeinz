@@ -8,6 +8,9 @@ using KraftHeinz.Services;
 using KraftHeinz.Data;
 using Swashbuckle;
 using Microsoft.OpenApi.Models;
+using Oracle.ManagedDataAccess.Client;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace KraftHeinz
 {
@@ -28,8 +31,8 @@ namespace KraftHeinz
 
             // Configuração dos serviços
             services.AddScoped<IFactoryService, FactoryService>();
-            services.AddScoped<IReservoirService, ReservoirService>();
-            services.AddScoped<IPowerPlantService, PowerPlantService>();
+            //services.AddScoped<IReservoirService, ReservoirService>();
+            //services.AddScoped<IPowerPlantService, PowerPlantService>();
 
             // Configuração do Swagger
             services.AddSwaggerGen(c =>
@@ -40,7 +43,7 @@ namespace KraftHeinz
             services.AddSwaggerGenNewtonsoftSupport();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseSwagger();
 

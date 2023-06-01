@@ -1,0 +1,23 @@
+@using KraftHeinz.Models
+@model IEnumerable<Factory>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Region</th>
+            <!-- outras colunas -->
+        </tr>
+    </tbody>
+        @foreach (var factory in Model)
+        {
+            <tr>
+                <td>@factory.Id</td>
+                <td>@factory.Name</td>
+                <td>@factory.Region</td>
+                <!-- outras colunas -->
+            </tr>
+        }
+    </tbody>
+</table>

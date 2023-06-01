@@ -18374,8 +18374,13 @@
   "RootNamespace": "KraftHeinz",
   "Documents": [
     {
-      "FilePath": "/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Index.cshtml",
-      "TargetPath": "Views\\Index.cshtml",
+      "FilePath": "/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Shared/_ViewImports.cshtml",
+      "TargetPath": "Views\\Shared\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],

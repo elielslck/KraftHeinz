@@ -12,5 +12,6 @@ namespace KraftHeinz.Services
         Task<Factory> UpdateFactory(int id, Factory factory);
         Task<bool> DeleteFactory(int id);
         Task<int> UpdateFactory(Factory factory);
+        Task DeleteFactory(Factory existingFactory);
     }
 }

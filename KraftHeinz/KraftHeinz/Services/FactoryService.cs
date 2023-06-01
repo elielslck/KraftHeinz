@@ -59,5 +59,14 @@ namespace KraftHeinz.Services
             return false;
         }
 
+        public Task<int> UpdateFactory(Factory factory)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteFactory(Factory existingFactory)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

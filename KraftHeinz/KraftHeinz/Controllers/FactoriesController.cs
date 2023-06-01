@@ -44,8 +44,32 @@ namespace KraftHeinz.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFactory(int id, Factory factory)
         {
-            var existingFactory = await _factoryService.UpdateFactory(factory);
-            return UpdateFactory(existingFactory);
+            var existingFactory = await _factoryService.GetFactoryById(id);
+            if (existingFactory == null)
+            {
+                return NotFound();
+            }
+
+            existingFactory.Name = factory.Name;
+            existingFactory.Region = factory.Region;
+
+            await _factoryService.UpdateFactory(existingFactory);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteFactory(int id)
+        {
+            var existingFactory = await _factoryService.GetFactoryById(id);
+            if (existingFactory == null)
+            {
+                return NotFound();
+            }
+
+            await _factoryService.DeleteFactory(existingFactory);
+
+            return NoContent();
         }
     }
-} 
+}

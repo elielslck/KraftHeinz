@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXguY3NodG1s
+[/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/HUBFINTECH/u300377/Documentos/Pessoal/Fiap/KraftHeinz/KraftHeinz/Views/Shared/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
