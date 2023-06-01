@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Oracle.EntityFrameworkCore;
-using KraftHeinz.Data;
 
-namespace KraftHeinz
+namespace KraftKeinz
 {
     public class Program
     {
@@ -15,15 +12,14 @@ namespace KraftHeinz
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureLogging(logging =>
-                {
-                    logging.ClearProviders();
-                    logging.AddConsole();
-                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                })
-                .UseOracleSQLCompatibility("11");
+                });
+
+        private class Startup
+        {
+        }
     }
 }
+
