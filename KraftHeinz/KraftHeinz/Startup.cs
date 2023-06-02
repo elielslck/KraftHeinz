@@ -34,6 +34,7 @@ namespace KraftHeinz
             services.AddScoped<IFactoryService, FactoryService>();
             services.AddScoped<IReservoirService, ReservoirService>();
             services.AddScoped<IPowerPlantService, PowerPlantService>();
+            services.AddScoped<ICrossedDataService, CrossedDataService>();
 
             // Configuração do Swagger
             services.AddSwaggerGen(c =>
@@ -53,6 +54,7 @@ namespace KraftHeinz
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "KraftHeinz API v1");
+                c.RoutePrefix = string.Empty;
             });
 
             app.UseRouting();

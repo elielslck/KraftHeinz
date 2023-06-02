@@ -16,5 +16,17 @@
         <member name="M:KraftHeinz.Migrations.MigrationInitial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:KraftHeinz.Migrations.MigrationInitial01">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial01.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial01.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial01.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

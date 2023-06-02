@@ -13,7 +13,7 @@ namespace KraftHeinz.Data
         public DbSet<Factory> Factories { get; set; }
         public DbSet<Reservoir> Reservoirs { get; set; }
         public DbSet<PowerPlant> PowerPlants { get; set; }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Factory>(entity =>
