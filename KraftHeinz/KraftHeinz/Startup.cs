@@ -25,26 +25,29 @@ namespace KraftHeinz
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc(option => option.EnableEndpointRouting = false);
             // Configuração do banco de dados
             services.AddDbContext<OracleDbContext>(options =>
                 options.UseOracle(Configuration.GetConnectionString("DefaultConnection")));
 
             // Configuração dos serviços
             services.AddScoped<IFactoryService, FactoryService>();
-            //services.AddScoped<IReservoirService, ReservoirService>();
-            //services.AddScoped<IPowerPlantService, PowerPlantService>();
+            services.AddScoped<IReservoirService, ReservoirService>();
+            services.AddScoped<IPowerPlantService, PowerPlantService>();
 
             // Configuração do Swagger
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KraftHeinz API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "KraftHeinz API", Version = "v1", Description = "Api para consulta das fábricas, reservatorios de água e fornecedores/usinas de energia eletrica" });
             });
 
             services.AddSwaggerGenNewtonsoftSupport();
         }
 
-        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseMvc();
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>

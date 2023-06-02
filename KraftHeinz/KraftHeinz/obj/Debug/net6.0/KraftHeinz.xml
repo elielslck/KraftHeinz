@@ -4,5 +4,17 @@
         <name>KraftHeinz</name>
     </assembly>
     <members>
+        <member name="T:KraftHeinz.Migrations.MigrationInitial">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:KraftHeinz.Migrations.MigrationInitial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

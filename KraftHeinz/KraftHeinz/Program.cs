@@ -1,5 +1,7 @@
+using KraftHeinz;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore;
 
 namespace KraftKeinz
 {
@@ -16,10 +18,7 @@ namespace KraftKeinz
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-
-        private class Startup
-        {
-        }
+        
     }
 }
 

@@ -6,10 +6,12 @@ namespace KraftHeinz.Services
 {
     public interface IPowerPlantService
     {
-        Task<List<PowerPlant>> GetAllFactories();
-        Task<PowerPlant> GetFactoryById(int id);
-        Task<PowerPlant> CreateFactory(PowerPlant factory);
-        Task<PowerPlant> UpdateFactory(int id, PowerPlant factory);
-        Task<bool> DeleteFactory(int id);
+        Task<List<PowerPlant>> GetAllPowerPlants();
+        Task<PowerPlant> GetPowerPlantById(int id);
+        Task<PowerPlant> CreatePowerPlant(PowerPlant powerPlant);
+        Task<PowerPlant> UpdatePowerPlant(int id, PowerPlant powerPlant);
+        Task<bool> DeletePowerPlant(int id);
+        Task<int> UpdatePowerPlant(PowerPlant powerPlant);
+        Task DeletePowerPlant(PowerPlant existingPowerPlant);
     }
 }
