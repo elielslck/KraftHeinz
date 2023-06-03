@@ -14,6 +14,7 @@ namespace KraftHeinz.Data
         public DbSet<Reservoir> Reservoirs { get; set; }
         public DbSet<PowerPlant> PowerPlants { get; set; }
         
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Factory>(entity =>
@@ -33,6 +34,7 @@ namespace KraftHeinz.Data
                 entity.Property(e => e.Id).HasColumnName("ID");
                 entity.Property(e => e.Name).HasColumnName("Name").HasMaxLength(50);
                 entity.Property(e => e.Region).HasColumnName("Region").HasMaxLength(50);
+                entity.Property(e => e.PowerPlantId).HasColumnName("PowerPlantId");
                 // outras configurações
             });
 
@@ -43,6 +45,7 @@ namespace KraftHeinz.Data
                 entity.Property(e => e.Id).HasColumnName("ID");
                 entity.Property(e => e.Name).HasColumnName("Name").HasMaxLength(50);
                 entity.Property(e => e.Region).HasColumnName("Region").HasMaxLength(50);
+                entity.Property(e => e.FactoryId).HasColumnName("FactoryId");
                 // outras configurações
             });
         }

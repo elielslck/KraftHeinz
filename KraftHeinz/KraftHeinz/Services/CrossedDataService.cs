@@ -27,13 +27,13 @@ namespace KraftHeinz.Services
                 List<PowerPlant> powerPlants = _context.PowerPlants.Where(p => p.FactoryId == factory.Id).ToList();
                 foreach (var powerPlant in powerPlants)
                 {
-                    Reservoir revoirs = _context.Reservoirs.FirstOrDefault(r => r.PowerPlantId == powerPlant.Id);
+                    Reservoir reservoir = _context.Reservoirs.FirstOrDefault(r => r.PowerPlantId == powerPlant.Id);
 
                     CrossedData data = new CrossedData
                     {
                         Factory = factory,
                         PowerPlant = powerPlant,
-                        Revoirs = revoirs
+                        Reservoir = reservoir
                     };
 
                     crossedData.Add(data);

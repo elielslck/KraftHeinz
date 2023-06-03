@@ -5,6 +5,6 @@ namespace KraftHeinz.Models
     {
         public Factory Factory { get; set; }
         public PowerPlant PowerPlant { get; set; }
-        public Reservoir Revoirs { get; set; }
+        public Reservoir Reservoir { get; set; }
     }
 }
